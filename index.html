@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="sidebar.css" />
+    <!-- Boxicons CDN Link -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main class="container-lg container-xl container-xxl">
+      <ul class="topbar m-0 list-unstyled">
+        <div
+          class="topbarChild d-flex justify-content-between align-items-center"
+        >
+          <li class="topBarLogo text-dark">
+            <div class="logo-details d-flex align-items-center">
+              <i class="bx bx-menu rounded-circle" id="btn"></i>
+              <img
+                class="ms-2 ms-sm-3 my-auto"
+                src="./image/logo.png"
+                width="35"
+                height="35"
+                alt="bcp-logo"
+              />
+              <div class="logo_name text-dark ms-1 ms-sm-3">BESTLINK</div>
+              <div class="my-auto search-boxContainer d-none d-lg-block">
+                <input
+                  type="text"
+                  class="form-control search-box"
+                  type="search"
+                  placeholder="Search..."
+                  aria-label="Example text with button addon"
+                  aria-describedby="button-addon1"
+                />
+              </div>
+            </div>
+          </li>
+          <div class="d-flex align-items-center justify-content-end">
+            <li>
+              <i class="bx bxs-bell fs-4 mt-1 m-0"></i>
+            </li>
+            <li>
+              <div class="nav-item dropdown my-auto ms-4">
+                <a
+                  id="dropdownmenu"
+                  class="nav-link dropdown-toggle d-flex align-items-center"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <h5 class="m-0 d-none d-sm-block">User Name</h5>
+                  <img
+                    class="ms-0 ms-sm-3"
+                    src="./image/man.png"
+                    width="32"
+                    height="32"
+                    alt="profile-picture"
+                  />
+                </a>
+                <ul class="dropdown-menu border shadow dropdownContainer">
+                  <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Logout</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </div>
+        </div>
+      </ul>
+      <div class="px-0 d-xl-flex position-relative d-flex">
+        <div class="sidebar close rounded shadow">
+          <ul class="nav-list p-0">
+            <li class="d-block d-lg-none">
+              <i class="bx bx-search"></i>
+              <input type="text" placeholder="Search..." />
+              <span class="tooltip">Search</span>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bx bx-grid-alt"></i>
+                <span class="links_name">Dashboard</span>
+              </a>
+              <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+              <a href="themeColor.html">
+                <i class="bx bx-user"></i>
+                <span class="links_name">Theme Color</span>
+              </a>
+              <span class="tooltip">Theme Color</span>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bx bx-chat"></i>
+                <span class="links_name">Messages</span>
+              </a>
+              <span class="tooltip">Messages</span>
+            </li>
+            <li>
+              <div class="iocn-link">
+                <a>
+                  <i class="bx bx-pie-chart-alt-2"></i>
+                  <span class="links_name">Analytics</span>
+                </a>
+                <i class="bx bx-chevron-down arrow"></i>
+              </div>
+              <ul class="sub-menu">
+                <li><a class="link_name p-0" href="">Analytics</a></li>
+                <li><a href="">Web Design</a></li>
+                <li><a href="">Web Design</a></li>
+              </ul>
+              <!-- <span class="tooltip">Analytics</span> -->
+            </li>
+            <li>
+              <a href="#">
+                <i class="bx bx-folder"></i>
+                <span class="links_name">File Manager</span>
+              </a>
+              <span class="tooltip">Files</span>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bx bx-cart-alt"></i>
+                <span class="links_name">Order</span>
+              </a>
+              <span class="tooltip">Order</span>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bx bx-heart"></i>
+                <span class="links_name">Saved</span>
+              </a>
+              <span class="tooltip">Saved</span>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bx bx-cog"></i>
+                <span class="links_name">Setting</span>
+              </a>
+              <span class="tooltip">Setting</span>
+            </li>
+          </ul>
+        </div>
+        <section class="home-section mx-3 bg-light rounded shadow">
+          <div class="text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+            consequatur officia debitis libero dolore quae possimus laudantium
+            similique, voluptatibus odio sit in necessitatibus totam nostrum.
+            Corporis iste ut beatae officia incidunt asperiores, quibusdam,
+            aliquam ab eaque sint harum perferendis error atque est quos. Est
+            dignissimos dolorem quo nihil laborum ratione vel magni, libero
+            adipisci, suscipit, vitae necessitatibus. Iusto odit dolorem
+            voluptate voluptatibus? Sapiente odit, ipsum exercitationem
+            accusantium perspiciatis magnam veritatis quisquam, rem aliquid
+            aliquam eveniet modi recusandae ex maxime. Exercitationem debitis
+            accusantium ratione nam cupiditate eius tempora molestias quae
+            corrupti! Similique iusto quis doloremque inventore necessitatibus,
+            aspernatur error eum nisi! Nobis quae, beatae aut sed amet facilis.
+            Veritatis impedit perspiciatis porro! Quos facere quisquam corporis
+            suscipit enim. Tempora rem omnis quod similique nisi, reiciendis
+            voluptatum fugiat alias obcaecati voluptatem eum perspiciatis
+            soluta, iure, culpa ducimus eveniet eos unde incidunt! Quo iusto,
+            ducimus beatae commodi illum dignissimos voluptates. Facilis
+            repudiandae libero ducimus commodi sed. Harum similique quo, nisi
+            commodi tempora molestiae exercitationem ad sapiente repellat,
+            debitis nostrum atque vero, a quam eius fuga necessitatibus quis
+            mollitia quidem illo animi odio consequuntur doloribus? Commodi
+            officiis saepe perspiciatis voluptatibus porro pariatur possimus
+            iste recusandae repellendus eos cumque, numquam deleniti provident
+            quia dolore, quos earum delectus debitis quidem veniam adipisci quam
+            voluptate doloribus. Magnam accusamus sequi a explicabo nulla
+            ducimus optio exercitationem beatae perferendis nostrum, commodi
+            impedit incidunt sapiente. Earum libero asperiores explicabo
+            voluptate cupiditate deserunt accusantium fuga sapiente, iusto,
+            quas, eligendi minima voluptatibus tempora placeat! Quae animi
+            quibusdam eligendi, dolores eaque quas quod, atque aliquam magni,
+            quam cupiditate! Veritatis, harum ratione provident vel, numquam
+            fuga architecto laborum impedit voluptatibus necessitatibus
+            dignissimos neque eius obcaecati vero quia enim ducimus. Odit
+            incidunt inventore reiciendis a rem quasi, odio, corporis eligendi
+            possimus temporibus quas ullam, consequatur eius omnis nesciunt!
+            Praesentium magni consectetur non. Laudantium et, totam quidem
+            aperiam velit soluta eius? Delectus natus libero fuga molestiae, ab
+            blanditiis vel obcaecati dolores porro eos corporis officiis, alias
+            accusamus fugiat praesentium repellat saepe perspiciatis voluptatum
+            veritatis magnam ut, commodi iure eaque vero. Similique vitae
+            obcaecati suscipit aperiam doloremque quo explicabo consequuntur in,
+            iste neque velit voluptate praesentium ipsam incidunt eligendi eum.
+            Blanditiis, nam ab. Corporis eveniet labore ut eaque nulla,
+            molestias iure excepturi sequi molestiae dolore quia unde
+            exercitationem alias nisi repellendus inventore deserunt quaerat
+            perferendis neque sunt error! Corporis libero quae quas
+            exercitationem esse vel assumenda illum ad inventore numquam optio
+            voluptatibus consequatur sapiente perspiciatis reiciendis, iste,
+            dolor blanditiis possimus. Deleniti quis, nulla consectetur possimus
+            et voluptatem laboriosam laborum aperiam nisi animi alias neque
+            incidunt officiis vitae corporis, unde veritatis doloremque quos
+            aliquid impedit enim inventore ullam? Ipsam in rem unde labore
+            perspiciatis. Perferendis dignissimos distinctio commodi. Laudantium
+            nihil provident eius officiis ex commodi cumque tempora, doloremque
+            inventore quis ab soluta eaque, totam error alias. Impedit iure enim
+            nisi a labore vero ducimus odio possimus sapiente sint non rem
+            quisquam, ex nulla aut voluptates aliquam quos ipsam? Corrupti
+            placeat culpa, dolore consequuntur, reiciendis esse eligendi
+            voluptas unde dolor odio voluptate odit optio architecto, natus
+            error quisquam possimus.
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let sidebar = document.querySelector(".sidebar");
+      let closeBtn = document.querySelector("#btn");
+      let searchBtn = document.querySelector(".bx-search");
+      let arrow = document.querySelectorAll(".arrow");
+
+      closeBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("open");
+        menuBtnChange(); //calling the function(optional)
+      });
+
+      searchBtn.addEventListener("click", () => {
+        // Sidebar open when you click on the search iocn
+        sidebar.classList.toggle("open");
+        menuBtnChange(); //calling the function(optional)
+      });
+
+      // following are the code to change sidebar button(optional)
+      function menuBtnChange() {
+        if (sidebar.classList.contains("open")) {
+          closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the iocns class
+        } else {
+          closeBtn.classList.replace("bx-menu-alt-right", "bx-menu"); //replacing the iocns class
+        }
+      }
+
+      for (var i = 0; i < arrow.length; i++) {
+        arrow[i].addEventListener("click", (e) => {
+          let arrowParent = e.target.parentElement.parentElement;
+          arrowParent.classList.toggle("showMenu");
+        });
+      }
+
+      let sidebarBtn = document.querySelector(".bx-menu");
+      console.log(sidebarBtn);
+      sidebarBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("close");
+      });
+    </script>
+  </body>
+</html>
