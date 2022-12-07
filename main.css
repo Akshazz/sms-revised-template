@@ -8,6 +8,7 @@
   --black: #252525;
   --bg-color: #edf2f9;
   --gray: #36454f;
+  --danger-color: #dc2626;
 }
 
 * {
@@ -44,4 +45,41 @@ body {
   border-bottom: 2px solid var(--shady-white);
   display: block;
   margin: auto;
+}
+
+/* Input Field */
+
+.form-control:focus {
+  border-color: var(--primary-color) !important;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, -1), 0 0 8px rgba(255, 0, 0, -1) !important;
+}
+
+/* Input Field - Error */
+
+/* .form-control:focus {
+  border-color: var(--danger-color) !important;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, -1), 0 0 8px rgba(255, 0, 0, -1) !important;
+} */
+
+/* Password */
+
+.passwordContainer {
+  position: relative !important;
+}
+
+.fa-eye {
+  display: none;
+  position: absolute;
+  top: 28%;
+  right: 4%;
+  cursor: pointer;
+  color: var(--gray);
+}
+
+.fa-eye-slash {
+  position: absolute !important;
+  top: 31% !important;
+  right: 4% !important;
+  cursor: pointer;
+  color: var(--gray);
 }

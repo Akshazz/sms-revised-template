@@ -17,6 +17,10 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -32,17 +36,17 @@
           class="form-container d-flex justify-content-center w-100 p-3 p-lg-5"
         >
           <div class="m-auto">
-            <div class="form-header1 ps-2 mb-4">
+            <div class="form-header1 ps-2 mb-5">
               <h1 class="header1 fw-bold fs-1 m-0">BCP</h1>
               <h1 class="header2 fw-bold fs-1 m-0">LEARNING MANAGEMENT</h1>
             </div>
             <form onSubmit="{SubmitHandler}">
-              <label htmlFor="dropdown" class="fw-semibold fs-5 mb-2">
-                Dashboard:
+              <label htmlFor="dropdown" class="fw-semibold fs-6 mb-2">
+                Dashboard
               </label>
               <div id="dropdown" class="dropdown">
                 <button
-                  class="dropdownMenu loginInput px-4 fs-5 fw-semibold btn btn-light dropdown-toggle w-100 d-flex justify-content-between align-items-center dropDownBorder"
+                  class="dropdownMenu loginInput px-4 fs-6 fw-normal btn btn-light dropdown-toggle w-100 d-flex justify-content-between align-items-center dropDownBorder"
                   type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -81,40 +85,44 @@
               <div class="mb-3">
                 <label
                   htmlFor="exampleInputEmail1"
-                  class="form-label fw-semibold fs-5"
+                  class="form-label fw-semibold fs-6"
                 >
                   Email
                 </label>
                 <input
                   type="email"
-                  class="loginInput input-form form-control px-4 fs-6 fw-semibold"
-                  placeholder="s190xxxxx"
+                  class="loginInput input-form form-control px-4 fs-6 fw-normal"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                 />
               </div>
               <div class="mb-3">
                 <label
-                  htmlFor="exampleInputPassword1"
-                  class="form-label fw-semibold fs-5"
+                  htmlFor="inputPassword"
+                  class="form-label fw-semibold fs-6"
                 >
                   Password
                 </label>
-                <input
-                  type="password"
-                  class="loginInput input-form form-control px-4 fs-6 fw-semibold"
-                  placeholder="********"
-                  id="exampleInputPassword1"
-                />
+                <div id="login">
+                  <div class="passwordContainer">
+                    <input
+                      type="password"
+                      class="loginInput input-form form-control px-4 fs-6 fw-normal"
+                      id="inputPassword"
+                      name="password"
+                    />
+                    <i class="fa-solid fa-eye-slash" id="passwordIconId"></i>
+                  </div>
+                </div>
               </div>
               <div class="mb-3">
                 <p class="text-danger">*insert error message</p>
               </div>
               <button
                 type="submit"
-                class="sumbit-button btn btn-primary rounded-5 w-100 py-2 px-4 fs-5"
+                class="sumbit-button btn btn-primary rounded-2 w-100 py-2 px-4 fs-6"
               >
-                LOGIN
+                Login
                 <i class="bx bx-log-in"></i>
               </button>
             </form>
@@ -127,5 +135,19 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script>
+      let showPassword = document.querySelector("#passwordIconId");
+      const passwordField = document.querySelector("#inputPassword");
+
+      showPassword.addEventListener("click", function () {
+        this.classList.toggle("fa-eye");
+
+        const type =
+          passwordField.getAttribute("type") === "password"
+            ? "text"
+            : "password";
+        passwordField.setAttribute("type", type);
+      });
+    </script>
   </body>
 </html>
