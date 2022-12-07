@@ -5,27 +5,27 @@
 }
 
 div:nth-child(1) {
-  background-color: #252525;
+  background-color: var(--black);
   width: 100%;
 }
 
 div:nth-child(2) {
-  background-color: #07177a;
+  background-color: var(--secondary-color);
   width: 100%;
 }
 div:nth-child(3) {
-  background-color: #3a3940;
+  background-color: var(--gray);
   width: 100%;
 }
 div:nth-child(4) {
-  background-color: #1b84d6;
+  background-color: var(--primary-color);
   width: 100%;
 }
 div:nth-child(5) {
-  background-color: #edf2f9;
+  background-color: var(--shady-white);
   width: 100%;
 }
 div:nth-child(6) {
-  background-color: #ffffff;
+  background-color: var(--white);
   width: 100%;
 }

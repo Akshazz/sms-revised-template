@@ -4,6 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
+    <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="sidebar.css" />
     <!-- Boxicons CDN Link -->
@@ -100,40 +101,40 @@
               <span class="tooltip">Dashboard</span>
             </li>
             <li>
-              <a href="themeColor.html">
-                <i class="bx bx-user"></i>
+              <a href="/themeColor/themeColor.html">
+                <i class="bx bx-palette"></i>
                 <span class="links_name">Theme Color</span>
               </a>
               <span class="tooltip">Theme Color</span>
             </li>
             <li>
-              <a href="#">
-                <i class="bx bx-chat"></i>
-                <span class="links_name">Messages</span>
+              <a href="/login/login.html">
+                <i class="bx bx-log-in"></i>
+                <span class="links_name">Login UI</span>
               </a>
-              <span class="tooltip">Messages</span>
+              <span class="tooltip">Login UI</span>
             </li>
             <li>
-              <div class="iocn-link">
-                <a>
-                  <i class="bx bx-pie-chart-alt-2"></i>
-                  <span class="links_name">Analytics</span>
+              <div class="iocn-link arrow">
+                <a class="">
+                  <i class="bx bx-message-square-error"></i>
+                  <span class="links_name">Errors</span>
                 </a>
-                <i class="bx bx-chevron-down arrow"></i>
+                <i class="bx bx-chevron-down"></i>
               </div>
               <ul class="sub-menu">
-                <li><a class="link_name p-0" href="">Analytics</a></li>
-                <li><a href="">Web Design</a></li>
-                <li><a href="">Web Design</a></li>
+                <li><a class="link_name p-0">Errors UI</a></li>
+                <li><a href="/error/404.html">404 Error</a></li>
+                <li><a href="/error/500.html">500 Error</a></li>
               </ul>
               <!-- <span class="tooltip">Analytics</span> -->
             </li>
             <li>
-              <a href="#">
-                <i class="bx bx-folder"></i>
-                <span class="links_name">File Manager</span>
+              <a href="/loading/loading.html">
+                <i class="bx bx-message-dots"></i>
+                <span class="links_name">Loading UI</span>
               </a>
-              <span class="tooltip">Files</span>
+              <span class="tooltip">Loading UI</span>
             </li>
             <li>
               <a href="#">
@@ -259,7 +260,8 @@
 
       for (var i = 0; i < arrow.length; i++) {
         arrow[i].addEventListener("click", (e) => {
-          let arrowParent = e.target.parentElement.parentElement;
+          let arrowParent = e.currentTarget.parentNode;
+          console.log(arrowParent);
           arrowParent.classList.toggle("showMenu");
         });
       }

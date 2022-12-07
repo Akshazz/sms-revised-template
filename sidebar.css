@@ -112,6 +112,16 @@
 .sidebar li a:hover {
   background: #fff;
 }
+
+.sidebar li .iocn-link a:hover {
+  cursor: pointer;
+  background: #fff;
+}
+
+.sidebar li .iocn-link a:hover i,
+.sidebar li .iocn-link a:hover .links_name {
+  color: #11101d;
+}
 /* dropdown link */
 .sidebar li div a:hover {
   background: #07177a;
@@ -146,7 +156,7 @@
 }
 
 .sidebar.open .nav-list li.showMenu .sub-menu {
-  padding: 6px 6px 14px 50px;
+  padding: 5px 6px 0px 50px;
   margin-top: -10px;
   background-color: #07177a;
   display: block;
@@ -159,6 +169,7 @@
 /* chevron icon */
 
 .sidebar.open .nav-list li .iocn-link i {
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 .sidebar.open .nav-list li.showMenu .iocn-link i.arrow {
