@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="inputField.css" />
+    <link rel="stylesheet" href="inputAndButton.css" />
     <link rel="stylesheet" href="/main.css" />
 
     <link
@@ -33,16 +33,41 @@
         <div
           class="errorContainer p-4 p-sm-5 rounded-2 shadow-lg container d-block align-items-center text-center"
         >
+          <!-- Button -->
+          <!-- Small Button  -->
+          <label for="">Small Button</label>
+          <div class="mb-3">
+            <button
+              type="submit"
+              class="smallButtonTemplate sumbit-button btn rounded-2 w-100 px-5"
+            >
+              Log in
+            </button>
+          </div>
+          <!-- Large Button  -->
+          <label for="">Large Button</label>
+          <div class="mb-3">
+            <button
+              type="submit"
+              class="buttonTemplate sumbit-button btn rounded-2 w-100 px-5"
+            >
+              Log in
+            </button>
+          </div>
           <!-- Normal input field  -->
           <label for="normalInputField">Normal Input Field</label>
           <div class="mb-3">
-            <input class="form-control" id="normalInputField" type="text" />
+            <input
+              class="loginInput input-form form-control px-4 fs-6 fw-normal"
+              id="normalInputField"
+              type="text"
+            />
           </div>
           <!-- Error input field - it contains error border -->
           <label for="errorInputField">Error Input Field</label>
           <div class="mb-3">
             <input
-              class="form-control errored"
+              class="loginInput input-form form-control px-4 fs-6 fw-normal errored"
               id="errorInputField"
               type="text"
             />
@@ -53,7 +78,7 @@
             <div class="passwordContainer">
               <input
                 type="password"
-                class="form-control"
+                class="loginInput input-form form-control px-4 fs-6 fw-normal"
                 id="password1"
                 name="password"
                 placeholder="*******"

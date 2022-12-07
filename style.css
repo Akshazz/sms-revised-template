@@ -59,7 +59,8 @@
   color: gray !important;
 }
 
-.bxs-bell {
+.bxs-bell,
+.bxs-message-dots {
   color: #3a3940 !important;
 }
 
@@ -124,5 +125,15 @@
 @media (max-width: 400px) {
   .topbarChild {
     margin: 0 15px;
+  }
+
+  .logo_name {
+    display: none;
+  }
+
+  .logo-details img {
+    margin-left: 15px !important;
+    width: 37px;
+    height: 37px;
   }
 }

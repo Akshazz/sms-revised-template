@@ -15,7 +15,7 @@
 
 .polygon2 {
   position: absolute;
-  background: #00308f;
+  background: var(--secondary-color);
   left: 30px;
   width: 610px;
   height: 100vh;
@@ -28,6 +28,19 @@
     72% 0
   );
   clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 72% 100%, 97% 50%, 72% 0);
+}
+
+.buttonTemplate {
+  font-size: 20px !important;
+  padding: 9px 0px !important;
+  color: var(--white) !important;
+  background-color: var(--primary-color) !important;
+}
+
+.loginLineBreak {
+  border-bottom: 2px solid var(--gray);
+  display: block;
+  margin: auto;
 }
 
 .logo {
@@ -45,7 +58,7 @@
 }
 
 .header1 {
-  color: rgb(0, 191, 255);
+  color: var(--primary-color);
 }
 
 .header2 {
@@ -54,6 +67,10 @@
 
 .form-header1 {
   border-left: solid #00308f 8px;
+}
+
+.errorInput {
+  color: var(--danger-color);
 }
 
 @media screen and (max-width: 1120px) {
