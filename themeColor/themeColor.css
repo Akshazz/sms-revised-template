@@ -29,3 +29,7 @@ div:nth-child(6) {
   background-color: var(--white);
   width: 100%;
 }
+div:nth-child(7) {
+  background-color: var(--danger-color);
+  width: 100%;
+}
