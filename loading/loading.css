@@ -9,7 +9,7 @@
 .loader {
   position: fixed;
   display: flex;
-  background-color: #07177a;
+  background-color: var(--primary-color);
   height: 100vh;
   width: 100%;
   justify-content: center;

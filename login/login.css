@@ -1,3 +1,6 @@
+.loginContainer {
+  background-color: var(--white);
+}
 
 .polygon1 {
   position: relative;
@@ -51,7 +54,6 @@
 .form-header1 {
   border-left: solid #00308f 8px;
 }
-
 
 @media screen and (max-width: 1120px) {
   .polygon1,
