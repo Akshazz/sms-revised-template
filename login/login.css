@@ -38,7 +38,7 @@
 }
 
 .loginLineBreak {
-  border-bottom: 2px solid var(--gray);
+  border-bottom: 2px solid var(--light-gray);
   display: block;
   margin: auto;
 }
