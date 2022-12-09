@@ -3,6 +3,15 @@
   color: var(--white);
 }
 
+table thead tr th {
+  padding: 15px 20px !important;
+}
+
+table tbody tr td,
+table tbody tr th {
+  padding: 15px 20px !important;
+}
+
 .tableBodyColor tr:nth-child(odd) {
   color: black !important;
   font-weight: 450;
