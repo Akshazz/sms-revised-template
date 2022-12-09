@@ -6,6 +6,7 @@
   height: calc(100vh - 4.3125rem);
   width: 60px;
   background: #07177a;
+  /* overflow-y: auto; */
   padding: 6px 5px;
   z-index: 98;
   transition: all 0.5s ease;
